@@ -11,8 +11,8 @@ namespace task_27_1_2025
             {
                 if (Session["UserName"] != null && Session["UserEmail"] != null)
                 {
-                    lblUserName.Text = Session["UserName"].ToString();
-                    lblUserEmail.Text = Session["UserEmail"].ToString();
+                    UserName.Text = Session["UserName"].ToString();
+                    UserEmail.Text = Session["UserEmail"].ToString();
                 }
                 else
                 {

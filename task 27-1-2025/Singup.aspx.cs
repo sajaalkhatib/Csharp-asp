@@ -25,7 +25,7 @@ namespace TASK1
 
             if (Password == Repass && !string.IsNullOrEmpty(Name) && !string.IsNullOrEmpty(Email) && !string.IsNullOrEmpty(Password))
             {
-                // تخزين البيانات في الجلسة
+              
                 Session["UserName"] = Name;
                 Session["UserEmail"] = Email;
 

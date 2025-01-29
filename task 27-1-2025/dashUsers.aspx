@@ -63,8 +63,8 @@
                     <div class="card-body">
                         <h5 class="card-title">User Profile</h5>
                         <p class="card-text">
-                            <strong>Name:</strong> <asp:Label ID="lblUserName" runat="server"></asp:Label><br />
-                            <strong>Email:</strong> <asp:Label ID="lblUserEmail" runat="server"></asp:Label>
+                            <strong>Name:</strong> <asp:Label ID="UserName" runat="server"></asp:Label><br />
+                            <strong>Email:</strong> <asp:Label ID="UserEmail" runat="server"></asp:Label>
                         </p>
                         <asp:Button CssClass="btn btn-primary" ID="goProfile" runat="server" Text="View Profile" OnClick="goProfile_Click" />
                     </div>

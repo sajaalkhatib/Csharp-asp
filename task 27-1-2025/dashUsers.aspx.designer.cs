@@ -60,22 +60,22 @@ namespace task_27_1_2025
         protected global::System.Web.UI.WebControls.Button goReserve;
 
         /// <summary>
-        /// lblUserName control.
+        /// UserName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblUserName;
+        protected global::System.Web.UI.WebControls.Label UserName;
 
         /// <summary>
-        /// lblUserEmail control.
+        /// UserEmail control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblUserEmail;
+        protected global::System.Web.UI.WebControls.Label UserEmail;
 
         /// <summary>
         /// goProfile control.

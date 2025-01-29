@@ -25,7 +25,7 @@ namespace task_27_1_2025
 
                 foreach (string line in lines)
                 {
-                    string[] data = line.Split(','); // Assuming format: [bookId bookName bookType bookLevel]
+                    string[] data = line.Split(','); 
 
                     if (data[0].Equals(searchBookID.Text.Trim(), StringComparison.OrdinalIgnoreCase))
                     {
