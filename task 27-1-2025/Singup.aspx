@@ -1,10 +1,9 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="regester.aspx.cs" Inherits="TASK1.regester" %>
 
 <!DOCTYPE html>
-
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title></title>
+    <title>Register</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"/>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </head>
@@ -25,43 +24,38 @@
                                             <div class="d-flex flex-row align-items-center mb-4">
                                                 <i class="fas fa-user fa-lg me-3 fa-fw"></i>
                                                 <div class="form-outline flex-fill mb-0">
-                                                    <asp:TextBox ID="name" runat="server"></asp:TextBox>
-                                                     <br />
-                                                    <label class="form-label" for="form3Example1c">Your Name</label>
+                                                    <asp:TextBox ID="name" runat="server" CssClass="form-control" />
+                                                    <label class="form-label" for="name">Your Name</label>
                                                 </div>
                                             </div>
 
                                             <div class="d-flex flex-row align-items-center mb-4">
                                                 <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
                                                 <div class="form-outline flex-fill mb-0">
-                                                    <asp:TextBox ID="email" runat="server"></asp:TextBox>
-                                                     <br />
-                                                    <label class="form-label" for="form3Example3c">Your Email</label>
+                                                    <asp:TextBox ID="email" runat="server" CssClass="form-control" />
+                                                    <label class="form-label" for="email">Your Email</label>
                                                 </div>
                                             </div>
 
                                             <div class="d-flex flex-row align-items-center mb-4">
                                                 <i class="fas fa-lock fa-lg me-3 fa-fw"></i>
                                                 <div class="form-outline flex-fill mb-0">
-                                                    <asp:TextBox ID="password" runat="server"></asp:TextBox>
-                                                     <br />
-                                                    <label class="form-label" for="form3Example4c">Password</label>
+                                                    <asp:TextBox ID="password" runat="server" CssClass="form-control" TextMode="Password" />
+                                                    <label class="form-label" for="password">Password</label>
                                                 </div>
                                             </div>
 
                                             <div class="d-flex flex-row align-items-center mb-4">
                                                 <i class="fas fa-key fa-lg me-3 fa-fw"></i>
                                                 <div class="form-outline flex-fill mb-0">
-                                                    <asp:TextBox ID="repass" runat="server"></asp:TextBox>
-                                                     <br />
-                                                    <label class="form-label" for="form3Example4cd">Repeat your password</label>
+                                                    <asp:TextBox ID="repass" runat="server" CssClass="form-control" TextMode="Password" />
+                                                    <label class="form-label" for="repass">Repeat your password</label>
                                                 </div>
                                             </div>
 
                                             <div class="form-check d-flex justify-content-center mb-5">
                                                 <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3c" />
                                                 <label class="form-check-label" for="form2Example3">
-                                                   
                                                     I agree all statements in <a href="#!">Terms of service</a>
                                                 </label>
                                             </div>
@@ -70,15 +64,13 @@
                                                 <asp:Button CssClass="btn btn-primary" ID="SignUp" runat="server" Text="Sign Up" OnClick="SignUp_Click" />
                                             </div>
 
+                                            <asp:Label ID="result" runat="server" CssClass="text-danger" />
 
                                         </div>
+
                                         <div class="col-md-10 col-lg-6 col-xl-7 d-flex align-items-center order-1 order-lg-2">
-
-                                            <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-registration/draw1.webp"
-                                                class="img-fluid" alt="Sample image" />
+                                            <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-registration/draw1.webp" class="img-fluid" alt="Sample image" />
                                         </div>
-
-                                        <asp:Label ID="result" runat="server"></asp:Label>
                                     </div>
                                 </div>
                             </div>

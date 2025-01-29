@@ -11,7 +11,7 @@ namespace task_27_1_2025
 {
 
 
-    public partial class addBook
+    public partial class dashUsers
     {
 
         /// <summary>
@@ -58,5 +58,32 @@ namespace task_27_1_2025
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button goReserve;
+
+        /// <summary>
+        /// lblUserName control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblUserName;
+
+        /// <summary>
+        /// lblUserEmail control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblUserEmail;
+
+        /// <summary>
+        /// goProfile control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button goProfile;
     }
 }

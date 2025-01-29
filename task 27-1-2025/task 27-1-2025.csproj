@@ -72,13 +72,16 @@
     <Content Include="admen.aspx" />
     <Content Include="book.jpg" />
     <Content Include="dashUsers.aspx" />
+    <Content Include="editProfile.aspx" />
     <Content Include="HomePage.aspx" />
     <Content Include="img.jpg" />
     <Content Include="imgg.jpg" />
     <Content Include="login.aspx" />
     <Content Include="Meeting.jpg" />
     <Content Include="Meeting1.jpg" />
+    <Content Include="searchBook.aspx" />
     <Content Include="Singup.aspx" />
+    <Content Include="userProfile.aspx" />
     <Content Include="viewBook.aspx" />
     <Content Include="viewMeeting.aspx" />
     <Content Include="Web.config" />
@@ -112,6 +115,13 @@
     <Compile Include="dashUsers.aspx.designer.cs">
       <DependentUpon>dashUsers.aspx</DependentUpon>
     </Compile>
+    <Compile Include="editProfile.aspx.cs">
+      <DependentUpon>editProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="editProfile.aspx.designer.cs">
+      <DependentUpon>editProfile.aspx</DependentUpon>
+    </Compile>
     <Compile Include="HomePage.aspx.cs">
       <DependentUpon>HomePage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -126,6 +136,13 @@
     <Compile Include="login.aspx.designer.cs">
       <DependentUpon>login.aspx</DependentUpon>
     </Compile>
+    <Compile Include="searchBook.aspx.cs">
+      <DependentUpon>searchBook.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="searchBook.aspx.designer.cs">
+      <DependentUpon>searchBook.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Singup.aspx.cs">
       <DependentUpon>Singup.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -134,6 +151,13 @@
       <DependentUpon>Singup.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="userProfile.aspx.cs">
+      <DependentUpon>userProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="userProfile.aspx.designer.cs">
+      <DependentUpon>userProfile.aspx</DependentUpon>
+    </Compile>
     <Compile Include="viewBook.aspx.cs">
       <DependentUpon>viewBook.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

@@ -13,11 +13,11 @@ namespace TASK1
 
         protected void log_Click(object sender, EventArgs e)
         {
-          
-            if (Email.Text == "saja@gmail.com" && Password.Text == "123")
+            // Admin credentials check
+            if (Email.Text == "Admin@gmail.com" && Password.Text == "123")
             {
                 Response.Redirect("admen.aspx");
-                return; 
+                return; // Exit after redirect
             }
 
             string file = Server.MapPath("users.txt");
@@ -30,6 +30,7 @@ namespace TASK1
                 {
                     string[] userData = user.Split(',');
 
+                   
                     if (userData.Length >= 3)
                     {
                         if (Email.Text == userData[1] && Password.Text == userData[2])
@@ -43,7 +44,7 @@ namespace TASK1
                 }
             }
 
-         
+          
             result.Text = "Invalid username or password";
             result.Visible = true;
         }

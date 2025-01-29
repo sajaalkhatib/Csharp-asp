@@ -11,7 +11,7 @@ namespace task_27_1_2025
 {
 
 
-    public partial class admen
+    public partial class userProfile
     {
 
         /// <summary>
@@ -24,30 +24,30 @@ namespace task_27_1_2025
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// addBook control.
+        /// username control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button addBook;
+        protected global::System.Web.UI.WebControls.TextBox username;
 
         /// <summary>
-        /// addroom control.
+        /// email control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button addroom;
+        protected global::System.Web.UI.WebControls.TextBox email;
 
         /// <summary>
-        /// searchBook control.
+        /// editButton control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button searchBook;
+        protected global::System.Web.UI.WebControls.Button editButton;
     }
 }

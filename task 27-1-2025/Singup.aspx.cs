@@ -23,8 +23,12 @@ namespace TASK1
             string Password = password.Text;
             string Repass = repass.Text;
 
-            if (Password == Repass && Name != "" && Email != "" && Password != "" && Repass != "")
+            if (Password == Repass && !string.IsNullOrEmpty(Name) && !string.IsNullOrEmpty(Email) && !string.IsNullOrEmpty(Password))
             {
+                // تخزين البيانات في الجلسة
+                Session["UserName"] = Name;
+                Session["UserEmail"] = Email;
+
                 string[] inputText = { Name, Email, Password };
                 string content = string.Join(",", inputText);
                 string filePath = Server.MapPath("users.txt");
@@ -32,21 +36,21 @@ namespace TASK1
                 if (File.Exists(filePath))
                 {
                     File.AppendAllText(filePath, content + "\n");
-                    Response.Redirect("login.aspx");
                 }
                 else
                 {
                     File.WriteAllText(filePath, content + Environment.NewLine);
-
                 }
+
+                Response.Redirect("login.aspx");
             }
             else if (Password != Repass)
             {
-                result.Text = "password not match";
+                result.Text = "Passwords do not match.";
             }
             else
             {
-                result.Text = "fields are requierd ";
+                result.Text = "All fields are required.";
             }
         }
     }

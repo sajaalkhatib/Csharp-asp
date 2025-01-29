@@ -18,10 +18,17 @@ namespace task_27_1_2025
         {
             Response.Redirect("addBook.aspx");
         }
+        
 
-        protected void addRoom_Click(object sender, EventArgs e)
+        protected void addroom_Click(object sender, EventArgs e)
         {
             Response.Redirect("addRoom.aspx");
+        }
+
+        protected void searchBook_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("searchBook.aspx");
+
         }
     }
 }

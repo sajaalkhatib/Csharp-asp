@@ -1,6 +1,10 @@
-1,qq,w,a
-1,qq,w,a
+1,nada,aaa,aaaa
+1,nada,aaa,aaaa
 3,qq,w,a
 3,qq,w,a
-10,cs,it,a
-11,cs,it,a
+10,saja,book_game,B
+11,cs,it,2
+11,cs,it,2
+10,saja,book_game,B
+12,saja,saka,7
+13,deep,it,2
